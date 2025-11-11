@@ -30,11 +30,7 @@ let Array_of_oprators =document.getElementsByClassName('but');
 }
 function transfer_num() {
   number_2=number_1;
-  number_1='';
-  console.log(number_1);
-  
-  console.log(number_2);
-  
+  number_1='';  
   j=1
   
 }
@@ -48,7 +44,7 @@ function operation(number_2,number_1,operator){
     result = Number(number_2) - Number(number_1);
     console.log(result);
     break;
-  case '*':
+  case 'X':
     result = Number(number_2) * Number(number_1);
     console.log(result);
     break;
@@ -61,8 +57,14 @@ function operation(number_2,number_1,operator){
 };
 
 function operation_call() {
-  operation(number_2,number_1,operator);
   number_1='';
   number_2='';
 
 };
+
+function dothis(){
+  number_1=number_1.slice(0,-1);
+  document.getElementById('previous').innerHTML=number_1;
+}
+
+
