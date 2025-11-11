@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outerbox">
+        <div class="innerbox">
+            <div class="input"> 
+                <div class="previous" id="previous">
+                </div>
+                <div class="previous" id="current">
+                </div>
+            </div>
+            <div class="numbers">
+            <button class="cancels" onclick="location.reload()" id="cancel">CE</button>
+            <button class="cancels" onclick=" dothis()" id="clear"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m456-320 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Zm-96 160q-19 0-36-8.5T296-192L80-480l216-288q11-15 28-23.5t36-8.5h440q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H360ZM180-480l180 240h440v-480H360L180-480Zm400 0Z"/></svg></button>
+            <button class="but" id="-">-</button>
+            <button class="but" id="X">X</button>
+            <button class="num" id="9">9</button>
+            <button class="num" id="8">8</button>
+            <button class="num" id="7">7</button>
+            <button class="but" id="/">/</button>
+            <button class="num" id="6">6</button>
+            <button class="num" id="5">5</button>
+            <button class="num" id="4">4</button>
+            <button class="but" id="+">+</button>
+            <button class="num" id="3">3</button>
+            <button class="num" id="2">2</button>
+            <button class="num" id="1">1</button>
+            <button class="ans" onclick="operation_call()" id="answer">=</button>
+            <button class="num" id="n0">0</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
