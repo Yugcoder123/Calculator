@@ -31,29 +31,6 @@ This project is a small, friendly calculator that runs entirely in your browser.
 | 🎨 | **Clean grid layout** | Big, tappable buttons arranged with CSS Grid |
 | 🪶 | **Featherweight** | Three files. No installs. Works offline |
 
-🖼️ Preview
-
-Here's the button layout at a glance:
-
-
-┌─────────────────────────────┐
-│                             │
-│   previous  →  8            │
-│   current   →  X  /  40     │
-│                             │
-├──────┬──────┬──────┬────────┤
-│  CE  │  ⌫  │  -   │   X     |
-├──────┼──────┼──────┼────────┤
-│  9   │  8   │  7   │   /    │
-├──────┼──────┼──────┼────────┤
-│  6   │  5   │  4   │   +    │
-├──────┼──────┼──────┼────────┤
-│  3   │  2   │  1   │        │
-├──────┴──────┴──────┤   =    │
-│         0          │        │
-└────────────────────┴────────┘
-
-
 ## 🚀 Quick Start
 
 Getting running takes about ten seconds.
