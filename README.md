@@ -1,7 +1,12 @@
-🧮 Calculator
+<div align="center">
 
-Born during an exam break. Built with pure HTML, CSS & JavaScript.
+# 🧮 Calculator
 
+### Born during an exam break. Built with pure HTML, CSS & JavaScript.
+
+*Zero frameworks. Zero dependencies. Just open and calculate.*
+
+<br>
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -13,16 +18,22 @@ Born during an exam break. Built with pure HTML, CSS & JavaScript.
 
 [✨ Features](#-features) • [🚀 Quick Start](#-quick-start) • [🕹️ Usage](#️-how-to-use) • [🧠 How It Works](#-how-it-works) • [🗺️ Roadmap](#️-roadmap) • [🤝 Contribute](#-contributing)
 
+</div>
 
-💡 About
+---
+
+## 💡 About
 
 Exams are stressful. Breaks are long. So I built a calculator.
 
 This project is a small, friendly calculator that runs entirely in your browser. It's a great example of how far you can get with just the web basics: no build tools, no packages, no setup. It's also a handy starting point if you're learning DOM manipulation and event handling.
 
-✨ Features
+---
+
+## ✨ Features
 
 | | Feature | Details |
+|---|---------|---------|
 | ➕ | **Core arithmetic** | Addition, subtraction, multiplication and division |
 | 📺 | **Two-line display** | See what you're typing on top, the operator and result below |
 | ⚡ | **Live results** | The answer updates on screen as you enter the second number |
@@ -31,11 +42,41 @@ This project is a small, friendly calculator that runs entirely in your browser.
 | 🎨 | **Clean grid layout** | Big, tappable buttons arranged with CSS Grid |
 | 🪶 | **Featherweight** | Three files. No installs. Works offline |
 
+---
+
+## 🖼️ Preview
+
+<!-- 📸 Add a screenshot or GIF of your calculator here: -->
+<!-- ![Calculator Demo](images/demo.png) -->
+
+Here's the button layout at a glance:
+
+```
+┌─────────────────────────────┐
+│                             │
+│   previous  →  8            │
+│   current   →  X  /  40     │
+│                             │
+├──────┬──────┬──────┬────────┤
+│  CE  │  ⌫   │  -   │   X    │
+├──────┼──────┼──────┼────────┤
+│  9   │  8   │  7   │   /    │
+├──────┼──────┼──────┼────────┤
+│  6   │  5   │  4   │   +    │
+├──────┼──────┼──────┼────────┤
+│  3   │  2   │  1   │        │
+├──────┴──────┴──────┤   =    │
+│         0          │        │
+└────────────────────┴────────┘
+```
+
+---
+
 ## 🚀 Quick Start
 
 Getting running takes about ten seconds.
 
-bash
+```bash
 # 1. Clone the repo
 git clone https://github.com/Yugcoder123/Calculator.git
 
@@ -46,11 +87,13 @@ cd Calculator
 open index.html          # macOS
 xdg-open index.html      # Linux
 start index.html         # Windows
-
+```
 
 > 💡 **No terminal?** Just download the ZIP from GitHub, unzip it, and double-click `index.html`.
 
-🕹️ How to Use
+---
+
+## 🕹️ How to Use
 
 | Button | Action |
 |:------:|--------|
@@ -60,14 +103,16 @@ start index.html         # Windows
 | `CE` | Reset everything |
 | `=` | Finish the calculation |
 
-🎯 Try it
+### 🎯 Try it
 
 1. Press **`8`**
 2. Press **`X`**
 3. Press **`5`**
 4. Watch **`40`** appear on the display 🎉
 
-🧠 How It Works
+---
+
+## 🧠 How It Works
 
 The logic lives in about 60 lines of readable JavaScript:
 
@@ -77,29 +122,41 @@ The logic lives in about 60 lines of readable JavaScript:
 - **`dothis()`** trims the last character off the current number (the backspace).
 - **`CE`** simply reloads the page for a guaranteed clean reset.
 
-js
+```js
 switch (operator) {
   case '+': result = Number(number_2) + Number(number_1); break;
   case '-': result = Number(number_2) - Number(number_1); break;
   case 'X': result = Number(number_2) * Number(number_1); break;
   case '/': result = Number(number_2) / Number(number_1); break;
 }
+```
 
-📁 Project Structure
+---
+
+## 📁 Project Structure
+
+```
 Calculator/
 ├── 📂 images/       → project images & assets
 ├── 📄 index.html    → page structure & buttons
 ├── 🎨 style.css     → layout & styling (Grid + Flexbox)
 ├── ⚙️  script.js     → calculator logic & events
 └── 📖 README.md     → you are here
-🛠️ Tech Stack
+```
 
-| Technology            | Used for                                                      |
-|   HTML5               | Page structure and buttons                                    |
-| CSS3                  |Grid layout, styling, Google Fonts (Roboto, Poppins, Orbitron) |
-| JavaScript (ES6)      |Logic, DOM updates, event listeners                            |
+---
 
-🗺️ Roadmap
+## 🛠️ Tech Stack
+
+| Technology | Used for |
+|------------|----------|
+| **HTML5** | Page structure and buttons |
+| **CSS3** | Grid layout, styling, Google Fonts (Roboto, Poppins, Orbitron) |
+| **JavaScript (ES6)** | Logic, DOM updates, event listeners |
+
+---
+
+## 🗺️ Roadmap
 
 This calculator is a work in progress. Here's what could come next:
 
@@ -113,17 +170,36 @@ This calculator is a work in progress. Here's what could come next:
 - [ ] 🌙 Light / dark theme toggle
 
 Pick one and make it yours! 👇
-🤝 Contributing
+
+---
+
+## 🤝 Contributing
 
 Contributions, ideas and bug reports are all welcome, whatever your skill level.
-Found a bug or have a suggestion? [Open an issue](https://github.com/Yugcoder123/Calculator/issues) and let's talk.
-👤 Author
 
-Yugcoder123 · [GitHub](https://github.com/Yugcoder123)
+```bash
+# 1. Fork the repo, then create a branch
+git checkout -b feature/amazing-idea
+
+# 2. Make your changes and commit
+git commit -m "Add amazing idea"
+
+# 3. Push and open a Pull Request
+git push origin feature/amazing-idea
+```
+
+Found a bug or have a suggestion? [Open an issue](https://github.com/Yugcoder123/Calculator/issues) and let's talk.
+
+---
+
+<div align="center">
+
+### 👤 Author
+
+**Yugcoder123** · [GitHub](https://github.com/Yugcoder123)
 
 If this project made you smile (or helped you learn something), drop a ⭐ and share it with a friend.
 
-Built with ☕, boredom and a little too much free time between exams.
-Yugcoder123 — [GitHub](https://github.com/Yugcoder123)
+*Built with ☕, boredom and a little too much free time between exams.*
 
-If you found this useful, consider giving the repo a ⭐!
+</div>
